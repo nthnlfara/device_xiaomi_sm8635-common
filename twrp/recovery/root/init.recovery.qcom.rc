@@ -75,14 +75,14 @@ on property:twrp.modules.loaded=true
     start touch_report
 
 on property:twrp.all.users.decrypted=true
-    stop weaver_nxp
-    stop keymint-strongbox
-    stop authsecret_default
+    stop vendor.weaver_nxp
+    stop vendor.keymint-strongbox
+    stop vendor.authsecret_default
     #stop secure_element
     umount /mnt/vendor/persist
 
 on property:vendor.sys.listeners.registered=true
-    start weaver_nxp
-    start keymint-strongbox
-    start authsecret_default
+    start vendor.weaver_nxp
+    start vendor.keymint-strongbox
+    start vendor.authsecret_default
     #start secure_element
