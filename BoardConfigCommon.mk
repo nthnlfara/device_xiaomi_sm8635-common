@@ -30,12 +30,6 @@ TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := kryo385
 
-TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv8-2a
-TARGET_2ND_CPU_ABI := armeabi-v7a
-TARGET_2ND_CPU_ABI2 := armeabi
-TARGET_2ND_CPU_VARIANT := cortex-a75
-
 # Bootloader
 TARGET_NO_BOOTLOADER := false
 TARGET_USES_UEFI := true
@@ -155,7 +149,7 @@ TW_NO_EXFAT_FUSE := true
 TW_INCLUDE_NTFS_3G := true
 TW_INCLUDE_RESETPROP := true
 TW_USE_SERIALNO_PROPERTY_FOR_DEVICE_ID := true
-TW_DEVICE_VERSION := Amethyst by SMGReborn
+TW_DEVICE_VERSION := peridot
 TW_OVERRIDE_SYSTEM_PROPS := \
     "ro.build.fingerprint=ro.vendor.build.fingerprint;ro.build.version.incremental"
 RECOVERY_LIBRARY_SOURCE_FILES += \

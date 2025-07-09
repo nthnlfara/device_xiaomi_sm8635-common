@@ -43,7 +43,7 @@ RELAX_USES_LIBRARY_CHECK := true
 AB_OTA_UPDATER := true
 
 # VNDK
-PRODUCT_TARGET_VNDK_VERSION := 31
+PRODUCT_TARGET_VNDK_VERSION := 34
 
 # Virtual A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
@@ -85,7 +85,7 @@ BOARD_SHIPPING_API_LEVEL := 34
 SHIPPING_API_LEVEL := 34
 PRODUCT_SHIPPING_API_LEVEL := 34
 
-#Support to compile recovery without msm headers
+# Support to compile recovery without msm headers
 TARGET_HAS_GENERIC_KERNEL_HEADERS := true
 
 # Dynamic partitions
